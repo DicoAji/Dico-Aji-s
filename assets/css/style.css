@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body,
+body.darkmode {
+  transition: 2s;
+}
+h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+a {
+  color: #fe481c;
+  text-decoration: none;
+}
+.mt-17 {
+  margin-top: 17px;
+}
+p {
+  font-size: 14px;
+}
+.btn-orange {
+  background: #fe481c;
+  color: white;
+  font-weight: 800;
+  border-radius: 0;
+  padding: 10px 30px;
+}
+button:hover,
+a:hover {
+  transition: 1s;
+}
+
+/* header */
+.logo a {
+  margin-right: 11px;
+}
+.logo a img {
+  width: 2.5rem;
+}
+
+.html:hover,
+.html:hover,
+.css:hover,
+.bootstraps:hover,
+.react:hover,
+.sass:hover,
+.tw:hover,
+.phpmyadmin:hover,
+.email:hover,
+.fb:hover,
+.github:hover,
+.linkedin:hover,
+.ig:hover,
+.js:hover,
+.php:hover,
+.code:hover,
+.ci:hover {
+  filter: none;
+  transition: 1s;
+}
+
+/* DARK MODE */
+.darkmode,
+#darkmode {
+  background: rgb(6, 6, 6) !important;
+  color: white !important;
+}
+
+.darkmode .bg_darkmode {
+  background-color: white;
+}
+.lightmode {
+  background: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.light {
+  height: 2.5rem;
+  width: auto;
+}
+#ChangeTheme {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+#ChangeTheme:checked + span.slide:before {
+  transform: translatex(40px);
+}
+
+span.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #414141;
+  border-radius: 30px;
+  cursor: pointer;
+}
+span.slide:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #fe481c;
+  border-radius: 50%;
+  top: -2px;
+  left: 0px;
+  transition: 0.5s;
+  border: 1px solid #fe481c;
+}
+#ChangeTheme:checked + span.slide:before {
+  transform: translatex(100%);
+}
+
+.themeMode {
+  height: 15px;
+  width: 2.5rem;
+  position: relative;
+  margin: 0px auto;
+}
+.text_hover_orange:hover {
+  color: #fe481c !important;
+}
+.text_hover_white:hover {
+  color: rgb(113, 113, 113) !important;
+}
+.passfoto {
+  max-height: 27rem;
+  width: auto;
+}
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  transition: 0.3s;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
