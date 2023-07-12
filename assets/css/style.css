@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap");
 
 * {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -29,6 +31,7 @@ a {
 }
 p {
   font-size: 14px;
+  letter-spacing: 1px;
 }
 .btn-orange {
   background: #fe481c;
@@ -74,16 +77,26 @@ a:hover {
 /* DARK MODE */
 .darkmode,
 #darkmode {
-  background: rgb(6, 6, 6) !important;
-  color: white !important;
+  /* background: rgb(6, 6, 6) !important;
+  color: white !important; */
+  background: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .darkmode .bg_darkmode {
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(255, 255, 255);
+}
+
+.bg_dark {
+  background: #070707;
+  color: white;
 }
 .lightmode {
-  background: rgb(255, 255, 255) !important;
-  color: rgb(0, 0, 0) !important;
+  /* background: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important; */
+  background: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .light {
@@ -97,6 +110,10 @@ a:hover {
 }
 #ChangeTheme:checked + span.slide:before {
   transform: translatex(40px);
+}
+
+.ls_10 {
+  letter-spacing: 10px;
 }
 
 span.slide {
@@ -217,4 +234,16 @@ span.slide:before {
 .owl-carousel .owl-nav .owl-next:before {
   content: "\e836";
   right: -45px;
+}
+.gradient_1 {
+  position: absolute !important;
+  width: 30rem;
+  /* left: -50px !important; */
+  top: -10px !important;
+}
+.gradient_2 {
+  position: absolute !important;
+  width: 30rem;
+  right: 0 !important;
+  bottom: 0px !important;
 }
