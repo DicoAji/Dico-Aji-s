@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
 }
+
 body,
 body.darkmode {
   transition: 2s;
@@ -242,8 +243,14 @@ span.slide:before {
   top: -10px !important;
 }
 .gradient_2 {
-  position: absolute !important;
+  position: absolute;
   width: 30rem;
-  right: 0 !important;
-  bottom: 0px !important;
+  right: 0px;
+  bottom: 0px;
+}
+/* MEDIA QUERY */
+@media (max-width: 767.98px) {
+  .hidden_if767 {
+    display: none;
+  }
 }
