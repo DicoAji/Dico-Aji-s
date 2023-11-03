@@ -25,13 +25,19 @@
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 10s linear infinite 0s;
 }
 .animated-item:nth-child(2n + 2) {
   animation-delay: 2s;
 }
 .animated-item:nth-child(3n + 3) {
   animation-delay: 4s;
+}
+.animated-item:nth-child(4n + 4) {
+  animation-delay: 6s;
+}
+.animated-item:nth-child(5n + 5) {
+  animation-delay: 8s;
 }
 
 @keyframes BottomTotop {

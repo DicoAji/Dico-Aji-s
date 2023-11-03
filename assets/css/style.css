@@ -8,6 +8,14 @@
   padding: 0;
 }
 
+.tengah {
+  display: flex;
+  justify-content: center;
+}
+.m_30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 body,
 body.darkmode {
   transition: 2s;
@@ -15,6 +23,10 @@ body.darkmode {
 h1 {
   font-weight: 800;
   font-size: 2.5rem;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1rem;
 }
 .orange {
   color: #fe481c;
@@ -26,6 +38,10 @@ h1 {
 a {
   color: #fe481c;
   text-decoration: none;
+}
+
+a:hover {
+  color: #fe481c !important;
 }
 .mt-17 {
   margin-top: 17px;
@@ -113,8 +129,8 @@ a:hover {
   transform: translatex(40px);
 }
 
-.ls_10 {
-  letter-spacing: 10px;
+.ls_8 {
+  letter-spacing: 8px;
 }
 
 span.slide {
