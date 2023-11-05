@@ -167,29 +167,33 @@
     <script>
       var checkbox = document.getElementById("ChangeTheme");
 
-      if (sessionStorage.getItem("mode") == "dark") {
-        darkmode();
-      } else {
+      if (sessionStorage.getItem("mode") == "light") {
+        // darkmode();
         nodark();
+      } else {
+        // nodark();
+        darkmode();
       }
 
       checkbox.addEventListener("change", function () {
         if (checkbox.checked) {
-          darkmode();
-        } else {
           nodark();
+          // darkmode();
+        } else {
+          darkmode();
+          // nodark();
         }
       });
 
       function darkmode() {
         document.body.classList.add("darkmode");
-        checkbox.checked = true;
+        checkbox.checked = false;
         sessionStorage.setItem("mode", "dark");
       }
 
       function nodark() {
         document.body.classList.remove("darkmode");
-        checkbox.checked = false;
+        checkbox.checked = true;
         sessionStorage.setItem("mode", "light");
       }
     </script>

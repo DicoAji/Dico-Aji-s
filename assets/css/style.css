@@ -266,7 +266,8 @@ span.slide:before {
 }
 /* MEDIA QUERY */
 @media (max-width: 767.98px) {
-  .hidden_if767 {
+  .hidden_if767,
+  .gradient_1 {
     display: none;
   }
 }
