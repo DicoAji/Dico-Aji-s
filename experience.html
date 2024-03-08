@@ -29,7 +29,7 @@
   </head>
 
   <body class="bg_dark">
-    <img class="gradient_1" src="assets/images/Gradient.png" alt="" />
+    <!-- <img class="gradient_1" src="assets/images/Gradient.png" alt="" /> -->
     <!-- NAV -->
     <nav class="navbar container bg-body-tertiary">
       <div class="container-fluid">
@@ -52,23 +52,60 @@
       <div class="container">
         <div class="row position-relative" style="height: 90vh">
           <!-- ISIANNNNNNNN -->
+
           <div class="tengah">
-            <h1 class="yellow mt-3">Dico Aji Prasetyo's Project</h1>
+            <h1 class="yellow">Dico Aji Prasetyo's Project</h1>
           </div>
           <!-- MY WEB PROJECT -->
           <div class="m_30">
-            <h2 class="yellow">My Web Project</h2>
+            <h2 class="">My Web Project</h2>
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12 p-3">
-                <div class="border">
-                  <img src="" alt="" />
+                <div class="border p-3 br_10">
+                  <img
+                    src="assets/images/project/maulapor.jpg"
+                    class="w-100"
+                    alt=""
+                  />
+                  <h5 style="font-size: 16px" class="mt-4 mb-2 fw-semibold">
+                    SIPPBCB
+                  </h5>
+                  <p>---</p>
+                  <div class="mt-2 d-block">
+                    <p style="font-size: 12px" class="mt-2">
+                      Sistem Informasi Pelaporan Penemuan Benda Cagar Budaya
+                    </p>
+                    <p style="font-size: 12px">
+                      Dinas Pendidikan dan Kebudayaan Kabupaten Batang
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                <div class="border p-3 br_10">
+                  <img
+                    src="assets/images/project/bandikmenti.jpg"
+                    class="w-100"
+                    alt=""
+                  />
+                  <h5 style="font-size: 16px" class="mt-4 mb-2 fw-semibold">
+                    BANDIKMENTI
+                  </h5>
+                  <p>---</p>
+                  <div class="mt-2 d-block">
+                    <p style="font-size: 12px" class="mt-2">
+                      Bantuan Pendidikan Siswa Mahasiswa Berprestasi dari
+                      Keluarga Miskin
+                    </p>
+                    <p style="font-size: 12px">Pemerintah Kabupaten Batang</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- MY UI/UX DESIGN  -->
           <div class="m_30">
-            <h2 class="yellow">My UI/UX Design Project</h2>
+            <h2 class="">My UI/UX Design Project</h2>
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12 p-3">
                 <div class="border">
@@ -79,7 +116,18 @@
           </div>
           <!-- MY LOGO DESIGN -->
           <div class="m_30">
-            <h2 class="yellow">My Logo Design Project</h2>
+            <h2 class="">My Logo Design Project</h2>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                <div class="border">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MACHINE LEARNING  -->
+          <div class="m_30">
+            <h2 class="">My Machine Learning Project</h2>
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12 p-3">
                 <div class="border">
@@ -91,37 +139,41 @@
         </div>
       </div>
     </section>
-    <img
+    <!-- <img
       class="gradient_2 hidden_if767"
       src="assets/images/Gradient (1).png"
       alt=""
-    />
+    /> -->
     <script>
       var checkbox = document.getElementById("ChangeTheme");
 
-      if (sessionStorage.getItem("mode") == "dark") {
-        darkmode();
-      } else {
+      if (sessionStorage.getItem("mode") == "light") {
+        // darkmode();
         nodark();
+      } else {
+        // nodark();
+        darkmode();
       }
 
       checkbox.addEventListener("change", function () {
         if (checkbox.checked) {
-          darkmode();
-        } else {
           nodark();
+          // darkmode();
+        } else {
+          darkmode();
+          // nodark();
         }
       });
 
       function darkmode() {
         document.body.classList.add("darkmode");
-        checkbox.checked = true;
+        checkbox.checked = false;
         sessionStorage.setItem("mode", "dark");
       }
 
       function nodark() {
         document.body.classList.remove("darkmode");
-        checkbox.checked = false;
+        checkbox.checked = true;
         sessionStorage.setItem("mode", "light");
       }
     </script>

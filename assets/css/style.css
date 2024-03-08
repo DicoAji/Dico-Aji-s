@@ -34,6 +34,9 @@ h2 {
 .yellow {
   color: #ffc200;
 }
+.br_10 {
+  border-radius: 10px;
+}
 
 a {
   color: #fe481c;
@@ -49,6 +52,7 @@ a:hover {
 p {
   font-size: 14px;
   letter-spacing: 1px;
+  margin: 0 0;
 }
 .btn-orange {
   background: #fe481c;
